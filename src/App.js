@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { createContext, useState } from 'react';
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import Dashboard from './components/Dashboard/Dashboard/Dashboard';
+import Footer from './components/Footer/Footer';
+import ContacUs from './components/Home/ContacUs/ContacUs';
+import Home from './components/Home/Home/Home';
+import Login from './components/Login/Login';
+import NotFound from './components/NotFound/NotFound';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
-function App() {
+export const userContex= createContext()
+
+const App = () => {
+  const [loginUser, setLoginUser]= useState({
+     userEmail: "",
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <userContex.Provider value={[loginUser, setLoginUser]}>
+        <Router>
+          <Routes>
+            <Route exact path="/" element={<Home/>}></Route>
+            <Route path="/login" element={<Login/>}></Route>
+            <Route path="/dashboard" element={<PrivateRoute>
+              <Dashboard/>
+              </PrivateRoute>}>
+            </Route>
+            <Route path="/contac" element={<ContacUs/> }></Route>
+            <Route path="*" element={<NotFound/>}></Route>
+          </Routes>
+          <Footer></Footer>
+        </Router>
+      </userContex.Provider>
     </div>
   );
-}
+};
 
 export default App;

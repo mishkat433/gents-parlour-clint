@@ -1,0 +1,35 @@
+.user{
+    height: auto;
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.create{
+    width: 360px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 0px 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+}
+.butt{
+    width: 360px;
+}
+.create:focus{
+     border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+.have:hover{
+    cursor: pointer;
+}
+.google{
+    height: 25px;
+    width: 25px;
+   float: left;
+}

@@ -1,0 +1,31 @@
+.list li{
+    list-style-type: none;
+    margin: 10px  0px;
+}
+.menu{
+    text-decoration: none;
+    color: #acacac;
+    cursor: pointer;
+}
+
+.dashborad-right{
+    background-color: rgb(233, 232, 232);
+}
+.active-option{
+    color: blue;
+    cursor: pointer;
+}
+/* .sidebar{
+    position: relative;
+}
+.sidebar::after{
+    content: '';
+    height: 100%;
+    width: 1px;
+    background-color: gray;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    opacity: 0.4;
+} */
+

@@ -1,0 +1,30 @@
+.test-img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: gray;
+}
+.caro{
+    overflow: auto;
+}
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center
+
+}
+
+.caro{
+    height: 280px;
+    width: 320px;
+    background-color: #EEE;
+}
+
+
+@media(max-width:576px){
+    .caro{
+        height: 300px;
+        width: 100%;
+    }
+    
+}

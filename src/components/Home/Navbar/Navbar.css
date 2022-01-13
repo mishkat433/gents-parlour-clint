@@ -1,0 +1,45 @@
+.NavLogo{
+    height: 60px;
+    width: 100px;
+}
+.link li a{
+    color: black;
+    text-transform: capitalize;
+}
+/* .link li a:hover{
+    border-bottom: 1px solid blue;
+} */
+.radious{
+    margin-top: 2px;
+    padding: 9px 20px;
+    border-radius: 4px;
+    color: white;
+    background-color: blue;
+}
+.active{
+    font-weight: 700;
+}
+
+.userImage{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: gray;
+}
+.cursor{
+    cursor: pointer;
+}
+
+
+@media(max-width:576px){
+    .link li a{
+    text-align: center;
+    margin-top: 10px;
+    }
+    .link li a:hover{
+        border-bottom: none;
+        background-color: blue;
+        color: white;
+        border-radius: 4px;
+    }
+}
