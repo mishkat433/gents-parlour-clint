@@ -1,5 +1,6 @@
 {
   "name": "gents-parlour",
+  "homepage": "https://mishkat433.github.io/gents-parlour-clint/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,12 +21,14 @@
     "react-hook-form": "^7.21.2",
     "react-items-carousel": "^2.8.0",
     "react-material-ui-carousel": "^3.1.0",
-     "react-router": "^6.1.1",
+    "react-router": "^6.1.1",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -48,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

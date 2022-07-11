@@ -2,17 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { CircularProgress } from '@mui/material';
 
 const OrderList = () => {
-    const [getBookingData, setBookingData]= useState([])
-    const [spinner,setSpinner]= useState(true);
+    const [getBookingData, setBookingData] = useState([])
+    const [spinner, setSpinner] = useState(true);
 
-    useEffect(()=>{
-        fetch("https://secret-journey-10093.herokuapp.com/getBooking")
-        .then(res=>res.json())
-        .then(result=>{
-            setBookingData(result)
-            setSpinner(false)
-        })
-    },[getBookingData])
+    useEffect(() => {
+        fetch("https://journey20093.herokuapp.com/getBooking")
+            .then(res => res.json())
+            .then(result => {
+                setBookingData(result)
+                setSpinner(false)
+            })
+    }, [getBookingData])
 
     return (
         <div>
@@ -28,17 +28,17 @@ const OrderList = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    
+
                     {
-                    getBookingData.map((items, index) =>
-                        <tr ke={index}>
-                            <td>{items.fName} {items.lName} </td>
-                            <td>{items.address}</td>
-                            <td>{items.bookingDate}</td>
-                            <td>{items.services}</td>
-                            <td>{items.Phone}</td>
-                        </tr>
-                    )
+                        getBookingData.map((items, index) =>
+                            <tr ke={index}>
+                                <td>{items.fName} {items.lName} </td>
+                                <td>{items.address}</td>
+                                <td>{items.bookingDate}</td>
+                                <td>{items.services}</td>
+                                <td>{items.Phone}</td>
+                            </tr>
+                        )
                     }
                 </tbody>
             </table>

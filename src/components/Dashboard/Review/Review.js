@@ -3,7 +3,7 @@ import { userContex } from "../../../App";
 
 const Review = () => {
   const [loginUser, setLoginUser] = useContext(userContex);
-  const [spinner,setSpinner]= useState(false);
+  const [spinner, setSpinner] = useState(false);
   const [bookingData, setFormData] = useState({
     emal: loginUser.userEmail,
     photo: loginUser.userPhoto,
@@ -12,17 +12,17 @@ const Review = () => {
   const submitHandle = (e) => {
     if (bookingData.text !== "" && bookingData.fName) {
       setSpinner(true)
-      fetch("https://secret-journey-10093.herokuapp.com/sendReview",{
+      fetch("https://journey20093.herokuapp.com/sendReview", {
         method: "POST",
-        headers: {"Content-Type": "Application/json"},
+        headers: { "Content-Type": "Application/json" },
         body: JSON.stringify(bookingData)
       })
-      .then(res=>res.json())
-      .then(result=>{
-        if(result){
-          setSpinner(false)
-        }
-      })
+        .then(res => res.json())
+        .then(result => {
+          if (result) {
+            setSpinner(false)
+          }
+        })
     }
     e.preventDefault();
   };
@@ -69,7 +69,7 @@ const Review = () => {
         {
           spinner && <p className="text-center text-success">sending...</p>
         }
-        
+
         <div className="col-lg-12 mt-2">
           <input
             className="btn header-btn sendbtn"
