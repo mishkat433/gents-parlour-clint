@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/gents-parlour-clint/static/css/main.90783a5c.chunk.css",
+    "main.js": "/gents-parlour-clint/static/js/main.88d82bf5.chunk.js",
+    "main.js.map": "/gents-parlour-clint/static/js/main.88d82bf5.chunk.js.map",
+    "runtime-main.js": "/gents-parlour-clint/static/js/runtime-main.6a319325.js",
+    "runtime-main.js.map": "/gents-parlour-clint/static/js/runtime-main.6a319325.js.map",
+    "static/js/2.7132f8a5.chunk.js": "/gents-parlour-clint/static/js/2.7132f8a5.chunk.js",
+    "static/js/2.7132f8a5.chunk.js.map": "/gents-parlour-clint/static/js/2.7132f8a5.chunk.js.map",
+    "static/js/3.a4ea3f90.chunk.js": "/gents-parlour-clint/static/js/3.a4ea3f90.chunk.js",
+    "static/js/3.a4ea3f90.chunk.js.map": "/gents-parlour-clint/static/js/3.a4ea3f90.chunk.js.map",
+    "index.html": "/gents-parlour-clint/index.html",
+    "static/css/main.90783a5c.chunk.css.map": "/gents-parlour-clint/static/css/main.90783a5c.chunk.css.map",
+    "static/js/2.7132f8a5.chunk.js.LICENSE.txt": "/gents-parlour-clint/static/js/2.7132f8a5.chunk.js.LICENSE.txt",
+    "static/media/HeaderPhoto.54f64126.png": "/gents-parlour-clint/static/media/HeaderPhoto.54f64126.png",
+    "static/media/NavLogo.c7cdb902.PNG": "/gents-parlour-clint/static/media/NavLogo.c7cdb902.PNG",
+    "static/media/professionalImage.5f774204.jpg": "/gents-parlour-clint/static/media/professionalImage.5f774204.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a319325.js",
+    "static/js/2.7132f8a5.chunk.js",
+    "static/css/main.90783a5c.chunk.css",
+    "static/js/main.88d82bf5.chunk.js"
+  ]
+}
