@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
-import { SignalCellularNullRounded } from "@mui/icons-material";
+// import { SignalCellularNullRounded } from "@mui/icons-material";
 
 
-const SimplePaymentForm = ({payHandle,backHandle}) => {
+const SimplePaymentForm = ({ payHandle, backHandle }) => {
   const stripe = useStripe();
   const elements = useElements();
-  const [payError, setPayError]= useState(null)
-  const [paySuccess, setPaySuccess]= useState(null)
+  const [payError, setPayError] = useState(null)
+  const [paySuccess, setPaySuccess] = useState(null)
 
   const paymentSubmit = async (event) => {
     event.preventDefault();
@@ -32,15 +32,15 @@ const SimplePaymentForm = ({payHandle,backHandle}) => {
   return (
     <div>
       {payError && <p className="text-danger">{payError}</p>}
-      {paySuccess && <p className="text-success">Your payment was successfull. (wait 4sec and back to booking)<br/> Thank you.</p>}
-      
+      {paySuccess && <p className="text-success">Your payment was successfull. (wait 4sec and back to booking)<br /> Thank you.</p>}
+
       <form onSubmit={paymentSubmit} className="bg-white">
         <CardElement />
         <button className="btn header-btn d-inline" type="submit" disabled={!stripe || !elements}>
           Pay
         </button>
       </form>
-      <br/>
+      <br />
       <button onClick={backHandle} className="btn header-btn mt-5">Back</button>
     </div>
   );

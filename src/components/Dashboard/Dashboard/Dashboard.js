@@ -22,7 +22,7 @@ const Dashboard = () => {
             .then(data => {
                 setFindAdmn(data)
             })
-    }, [])
+    }, [loginUser.userEmail])
 
     const sidebarHandle = (e) => {
         if (e === "book") { changeDashboard(e) }
@@ -74,6 +74,7 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
+            {setLoginUser}
         </div>
     );
 };

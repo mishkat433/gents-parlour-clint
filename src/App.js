@@ -20,14 +20,14 @@ const App = () => {
       <userContex.Provider value={[loginUser, setLoginUser]}>
         <Router>
           <Routes>
-            <Route exact path="/" element={<Home />}></Route>
+            <Route path="/" element={<Home />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/dashboard" element={<PrivateRoute>
               <Dashboard />
             </PrivateRoute>}>
             </Route>
             <Route path="/contac" element={<ContacUs />}></Route>
-            <Route path="*" element={<NotFound />}></Route>
+            <Route exact path="*" element={<NotFound />}></Route>
           </Routes>
           <Footer></Footer>
         </Router>

@@ -13,7 +13,7 @@ const BookingList = () => {
                 setMyBooking(result)
                 setSpinner(false)
             })
-    }, [])
+    }, [loginUser.userEmail])
     return (
         <div>
             <h5>My booking list</h5>
@@ -44,7 +44,7 @@ const BookingList = () => {
             </table>
 
             {
-                spinner && <p className="text-center mt-4">loading...</p>
+                spinner && <p className="text-center mt-4">loading... {setLoginUser}</p>
             }
         </div>
     );

@@ -96,7 +96,7 @@ const Booking = () => {
       <div className="col-lg-6 mt-2" style={{ display: disp ? "block" : "none" }}>
         <PaymentProcess payHandle={paymentHandleSuccess} backHandles={backHandle}></PaymentProcess>
       </div>
-
+      {setLoginUser}
     </div>
   );
 };

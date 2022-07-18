@@ -1,29 +1,32 @@
-.footer{
+.footer {
     background-color: #CA52C1;
 }
-.link a{
+
+.link a {
     display: block;
     color: white;
     text-transform: capitalize;
     text-decoration: none;
 }
 
-.link a:hover{
+.link a:hover {
     color: #050505;
     transition: 0.5s;
 }
-.icon i:hover{
+
+.icon i:hover {
     transition: 0.5s;
     transform: scale(1.5);
     color: blue;
     cursor: pointer;
 }
 
-@media(max-width:576px){
-    .fott{
+@media(max-width:576px) {
+    .fott {
         text-align: center;
     }
-    .mtt{
+
+    .mtt {
         margin-top: 20px;
     }
 }
